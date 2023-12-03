@@ -67,7 +67,7 @@ install_python_tools() {
     then
         echo "autorecon not found, installing...."
         echo "Gathering and installing all apt dependencies..."
-        sudo apt install python3 python3-pip python3-venv seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf > /dev/null 2>&1
+        sudo apt install -y python3 python3-pip python3-venv seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf > /dev/null 2>&1
         echo "Setting up pipx environment..."
         python3 -m pip install --user pipx > /dev/null 2>&1
         python3 -m pipx ensurepath > /dev/null 2>&1
